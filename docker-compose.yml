@@ -1,0 +1,9 @@
+version: "3.7"
+
+services:
+  build:
+    container_name: build_ems
+    build:
+      context: ./
+      target: prod
+    image: ems2/ems2:staging
